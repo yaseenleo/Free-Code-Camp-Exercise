@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p {
+            font-size: 20px;
+        }
+
+        /* Add media query below */
+        @media (max-height: 800px) {
+            p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel
+        vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac
+        habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem.
+        Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
+
+    <section>
+        <h2>Responsive Web Design Principles: <br /> Create a Media Query</h2>
+        <p>Media Queries are a new technique introduced in CSS3 that change the presentation of content based on
+            different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on
+            the device used to access the site.</p>
+        <p>Media Queries consist of a media type, and if that media type matches the type of device the document is
+            displayed on, the styles are applied. You can have as many selectors and styles inside your media query as
+            you want.
+            <br />
+            Here's an example of a media query that returns the content when the device's width is less than or equal to
+            100px:</p>
+        <p><span style="color: rgb(209, 43, 43)">@media (max-width: 100px) { /* CSS Rules */ }
+            </span></p>
+        <p>and the following media query returns the content when the device's height is more than or equal to 350px:
+        </p>
+        <p><span style="color: rgb(209, 43, 43)">@media (min-height: 350px) { /* CSS Rules */ }
+            </span></p>
+        <p>Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.</p>
+    </section>
+</body>
+
+</html>
