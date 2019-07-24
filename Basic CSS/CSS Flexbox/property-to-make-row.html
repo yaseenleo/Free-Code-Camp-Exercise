@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Use the flex-direction Property to Make a Row</title>
+    <style>
+        #box-container {
+            display: flex;
+            height: 500px;
+            flex-direction: row-reverse;
+        }
+
+        #box-1 {
+            background-color: dodgerblue;
+            width: 50%;
+            height: 50%;
+        }
+
+        #box-2 {
+            background-color: orangered;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">CSS Flexbox:<br /> Use the flex-direction Property to Make a Row
+        </h1>
+    <div id="box-container">
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+    </div>
+
+    <section>
+        
+        <p>Adding <span style="color: rgb(212, 49, 49)">display: flex</span>to an element turns it into a flex container. This makes it possible to align any children of that element into rows or columns. You do this by adding the <span style="color: rgb(212, 49, 49)">flex-direction</span>property to the parent item and setting it to row or column. Creating a row will align the children horizontally, and creating a column will align the children vertically.</p>
+        <p>Other options for <span style="color: rgb(212, 49, 49)">flex-direction</span>are row-reverse and column-reverse.</p>
+        <strong>Note:</strong>
+        <p>The default value for the<span style="color: rgb(212, 49, 49)">flex-direction</span> property is row.</p>
+    </section>
+</body>
+
+</html>
