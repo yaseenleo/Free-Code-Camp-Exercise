@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,181 +8,74 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div id="main">
-        <h1 id="title">Survey Form</h1>
-        <div id="form-container">
-            <p id="description">Let us know how we can improve</p>
-            <form action="#" id="survey-form">
-                <!-- name -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label id="name-label" for="name">Name</label>
+    <div class="container-fluid">
+        <div class="container">
+
+            <div class="head-container text-center">
+                <h1 class="text" id="title">Survey Form</h1>
+                <p class="text" id="description">Thank you for your time to improve our platform</p>
+            </div>
+            <div class="form-container">
+                <form action="#" id="survey-form">
+                    <div class="form-group">
+                        <label for="name-label" id="name-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name" required>
                     </div>
-                    <div class="right-tab">
-                        <input type="text" class="input-field" id="name" placeholder="Enter Your Name" required>
+
+                    <div class="form-group">
+                        <label for="email-label" id="email-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
                     </div>
-                </div>
-<!-- Email -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label id="email-label" for="email">Email</label>
+
+                    <div class="form-group">
+                        <label for="number-label" id="number-label">Age</label>
+                        <input type="number" class="form-control" min="1" max="2" name="email" id="number" placeholder="Enter Your Age" required>
                     </div>
-                    <div class="right-tab">
-                        <input type="email" class="input-field" id="email" placeholder="Enter Your Email Address" required>
-                    </div>
-                </div>
-<!-- Phone number -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label id="number-label" for="number">Contact Number</label>
-                    </div>
-                    <div class="right-tab">
-                        <input type="number" class="input-field" id="number" min="10" max="11" placeholder="Enter Your Phone Number" required>
-                    </div>
-                </div>
-<!-- Current Position -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label for="current-pos">
-                            Which option best describes your current role?
-                        </label>
-                    </div>
-                    <div class="right-tab">
-                        <select id="dropdown" name="current-pos" id="current-pos" autofocus>
+
+                    <div class="form-group">
+                        <label for="role">Which option describes your current role</label>
+                        <select class="form-control" name="role" id=dropdown>
+                            <option disabled selected value>Select Your Current Role</option>
                             <option value="Student">Student</option>
-                            <option value="Full Time Job">Full Time Job</option>
-                            <option value="Full Time Learner">Full Time Learner</option>
-                            <option value="Prefer Not to Say">Prefer Not to Say</option>
-                            <option value="Other">Other</option>
+                            <option value="full time job">Full time Learner</option>
+                            <option value="full time learner">full time learner</option>
+                            <option value="prefer not to say">prefer not to say</option>
+                            <option value="other">other</option>
                         </select>
                     </div>
-                </div>
-    <!-- review -->
 
-                <div class="row-tab">
-                    <div class="labels">
-                        <label for="review">How likely is that you would recommend to a friend?</label>
+                    <div class="form-group">
+                        <label for="user-recommend">Would you recomment to join us</label>
+                        <label for="definetly"><input type="radio" class="input-radio" value="definetly" name="feedback"> Definetly</label>
+                        <label for="may-be"><input type="radio" class="input-radio" value="may be" name="feedback"> May Be</label>
+                        <label for="no"><input type="radio" class="input-radio" value="no" name="feedback"> No</label>
                     </div>
-                    <div class="right-tab">
-                        <ul>
-                            <li>
-                                <input type="radio" value="definitely" name="review">
-                                Definitely
-                            </li>
-                            <li>
-                                <input type="radio" value="maybe" name="review">
-                                Maybe
-                            </li>
-                            <li>
-                                <input type="radio" value="not sure" name="review">
-                                Not Sure
-                            </li>
-                        </ul>
+
+                    <div class="form-group">
+                        <label for="">For which technology you would like to apply (Check all that apply)</label>
+                        <label for="front-end-developer"><input type="checkbox" name="front-end-developer" id="front-end-developer" value="front-end-developer"> Front End Developer</label>
+                        <label for="front-end-designer"><input type="checkbox" name="front-end-designer" id="front-end-designer" value="front-end-designer"> Front End designer</label>
+                        <label for="back-end-development"><input type="checkbox" name="back-end-development" id="back-end-development" value="back-end-development"> Back End Development</label>
+                        <label for="fullstack developer"><input type="checkbox" name="fullstack developer" id="fullstack developer" value="fullstack developer"> FullStack Developer</label>
+                        <label for="fullstack developer"><input type="checkbox" name="fullstack developer" id="fullstack developer" value="fullstack developer"> Internship</label>
                     </div>
-                </div>
-<!-- Preference -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label for="preference">Things that should be improved in the future
-                                (Check all that apply):</label>
+                    
+                    <div class="form-group">
+                        <label for="">Any Comment or Suggestion</label>
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="right-tab checkbox-container">
-                        <ul>
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="1" name="prefer">
-                                    Front-end Projects
-                                </label>
-                            </li>
 
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="2" name="prefer">
-                                    Back-end Projects
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="3" name="prefer">
-                                    Data Visualization
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="4" name="prefer">
-                                    Challenges
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="5" name="prefer">
-                                    Open Source Community
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="6" name="prefer">
-                                    Gitter help rooms
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="7" name="prefer">
-                                    Videos
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="8" name="prefer">
-                                    City Meetups
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="9" name="prefer">
-                                    Wiki
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="10" name="prefer">
-                                    Forum
-                                </label>
-                            </li>
-
-                            <li>
-                                <label for="">
-                                    <input type="checkbox" value="11" name="prefer">
-                                    Additional Courses
-                                </label>
-                            </li>
-                        </ul>
+                    <div class="btn-container">
+                        <button id="submit" type="submit" class="btn-success">Submit</button>
                     </div>
-                </div>
-                <!-- comment feed back -->
-                <div class="row-tab">
-                    <div class="labels">
-                        <label for="comment">Any Comments or Suggestions?</label>
-                    </div>
-                    <div class="right-tab">
-                        <textarea name="comment" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                <div id="button">
-                    <button id="submit">Submit</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
+
     </div>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
